@@ -15,7 +15,7 @@ public class Lists {
         this.borrowers.add(borrowers);
     }
 
-    public List<Borrower> getBorrowers(){
+    public ArrayList<Borrower> getBorrowers(){
         return borrowers;
     }
 

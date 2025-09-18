@@ -10,6 +10,7 @@ public class Main {
         list(lists);
 
         while(true){
+            boolean loggedIn = false;
             System.out.println("Ange användarnamn:");
             String user = scanner.nextLine();
 
@@ -20,9 +21,10 @@ public class Main {
             if(currentBorrower == null){
                 System.out.println("Felaktigt");
             }
+            loggedIn = true;
             System.out.println("Inloggad: " + currentBorrower.getUsername());
 
-            while(true){
+            while(loggedIn){
                 menu();
                 String chosenOption = scanner.nextLine();
 
@@ -40,9 +42,11 @@ public class Main {
                         listUserBooks(currentBorrower);
                         break;
                     case "5":
+                        loggedIn = false;
                         break;
                     case "6":
                         System.out.println("Avslutar");
+                        loggedIn = false;
                         break;
                     default:
                         System.out.println("Ogiltigt val");
