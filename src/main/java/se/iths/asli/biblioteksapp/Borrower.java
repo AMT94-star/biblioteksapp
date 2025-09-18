@@ -39,8 +39,11 @@ public class Borrower {
         if(borrowedBooks.contains(book)){
             return false;
         }
-        borrowedBooks.add(book);
-        return true;
+        else{
+            borrowedBooks.add(book);
+            return true;
+        }
+
     }
 
     public void returnBook(Book book){

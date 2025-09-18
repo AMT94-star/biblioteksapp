@@ -1,7 +1,6 @@
 package se.iths.asli.biblioteksapp;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Lists {
     ArrayList<Book> books = new ArrayList<>();
