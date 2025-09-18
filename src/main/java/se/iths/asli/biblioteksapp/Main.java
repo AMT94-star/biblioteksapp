@@ -32,6 +32,7 @@ public class Main {
 
                 switch(chosenOption){
                     case "1":
+                        //Testa vidare, blir fel i output
                         listAllBooks(lists);
                         break;
                     case "2":
@@ -41,12 +42,14 @@ public class Main {
                         returnBook(scanner, lists, currentBorrower);
                         break;
                     case "4":
+                        //Testa vidare, blir fel i output
                         listUserBooks(currentBorrower);
                         break;
                     case "5":
                         loggedIn = false;
                         break;
                     case "6":
+                        //Avslutar ej korrekt
                         System.out.println("Avslutar");
                         loggedIn = false;
                         break;
