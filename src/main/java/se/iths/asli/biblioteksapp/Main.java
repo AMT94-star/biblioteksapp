@@ -9,6 +9,9 @@ public class Main {
         Lists lists = new Lists();
         list(lists);
 
+        Book book = new Book("Räkna till 10","123456", new Author("Pingvin"));
+        lists.addBooks(book);
+
         while(true){
             boolean loggedIn = false;
             System.out.println("Ange användarnamn:");
