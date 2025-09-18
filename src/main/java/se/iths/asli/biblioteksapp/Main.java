@@ -22,7 +22,9 @@ public class Main {
                 System.out.println("Felaktigt");
             }
             loggedIn = true;
-            System.out.println("Inloggad: " + currentBorrower.getUsername());
+
+            //Testa vidare, blir fel i output
+            System.out.println("Inloggad: " + currentBorrower);
 
             while(loggedIn){
                 menu();
