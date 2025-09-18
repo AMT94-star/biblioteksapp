@@ -20,7 +20,7 @@ public class Main {
             if(currentBorrower == null){
                 System.out.println("Felaktigt");
             }
-            System.out.println("Inloggad: " + currentBorrower.getName());
+            System.out.println("Inloggad: " + currentBorrower.getUsername());
 
             while(true){
                 menu();
